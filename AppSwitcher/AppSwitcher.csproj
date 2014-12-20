@@ -94,12 +94,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Smiley.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="smiley.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
@@ -116,8 +110,15 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\Oculus.png" />
+    <None Include="Resources\monitor_icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hmd_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
