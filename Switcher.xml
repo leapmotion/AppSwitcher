@@ -1,5 +1,6 @@
 <app>
-    <WindowTitle>Super Awesome App</WindowTitle>
-    <DirectRiftExe>Test1.exe</DirectRiftExe>
-    <RegularExe>Test2.exe</RegularExe>
+    <WindowTitle>[ App Name ]</WindowTitle>
+    <RegularExe>[ Test2.exe ]</RegularExe>
+    <DirectRiftExe>[ Test1.exe ]</DirectRiftExe>
+    
 </app>
