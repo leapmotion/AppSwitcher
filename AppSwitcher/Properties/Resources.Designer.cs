@@ -63,9 +63,9 @@ namespace AppSwitcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Oculus {
+        internal static System.Drawing.Bitmap hmd_icon {
             get {
-                object obj = ResourceManager.GetObject("Oculus", resourceCulture);
+                object obj = ResourceManager.GetObject("hmd_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace AppSwitcher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap smiley {
+        internal static System.Drawing.Bitmap monitor_icon {
             get {
-                object obj = ResourceManager.GetObject("smiley", resourceCulture);
+                object obj = ResourceManager.GetObject("monitor_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

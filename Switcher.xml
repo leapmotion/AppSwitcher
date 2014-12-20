@@ -1,0 +1,6 @@
+<app>
+    <WindowTitle>[ App Name ]</WindowTitle>
+    <RegularExe>[ Test2.exe ]</RegularExe>
+    <DirectRiftExe>[ Test1.exe ]</DirectRiftExe>
+    
+</app>

@@ -28,105 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.pctRegular = new System.Windows.Forms.PictureBox();
-            this.pctRift = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pctRegular)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctRift)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 128);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Standard Executable";
-            // 
-            // pctRegular
-            // 
-            this.pctRegular.BackColor = System.Drawing.Color.Transparent;
-            this.pctRegular.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pctRegular.Location = new System.Drawing.Point(12, 18);
-            this.pctRegular.Name = "pctRegular";
-            this.pctRegular.Size = new System.Drawing.Size(164, 145);
-            this.pctRegular.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctRegular.TabIndex = 1;
-            this.pctRegular.TabStop = false;
-            this.pctRegular.Click += new System.EventHandler(this.OnRegularExeLaunch);
-            // 
-            // pctRift
-            // 
-            this.pctRift.BackColor = System.Drawing.Color.Transparent;
-            this.pctRift.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pctRift.Location = new System.Drawing.Point(200, 18);
-            this.pctRift.Name = "pctRift";
-            this.pctRift.Size = new System.Drawing.Size(151, 145);
-            this.pctRift.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pctRift.TabIndex = 0;
-            this.pctRift.TabStop = false;
-            this.pctRift.Click += new System.EventHandler(this.OnDirectRiftExeLaunch);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 109);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Launch";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(225, 109);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Launch Direct";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(212, 128);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 20);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "to Rift Executable";
-            // 
-            // MainForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BackgroundImage = global::AppSwitcher.Properties.Resources.Oculus;
-            this.ClientSize = new System.Drawing.Size(363, 181);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pctRegular);
-            this.Controls.Add(this.pctRift);
-            this.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Name = "MainForm";
-            this.Text = "[Game Title String]";
-            this.Load += new System.EventHandler(this.OnLoaded);
-            ((System.ComponentModel.ISupportInitialize)(this.pctRegular)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctRift)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+      this.lblStandardExe = new System.Windows.Forms.Label();
+      this.lblDirectRiftExe = new System.Windows.Forms.Label();
+      this.pctRegular = new System.Windows.Forms.PictureBox();
+      this.pctRift = new System.Windows.Forms.PictureBox();
+      ((System.ComponentModel.ISupportInitialize)(this.pctRegular)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pctRift)).BeginInit();
+      this.SuspendLayout();
+      // 
+      // lblStandardExe
+      // 
+      this.lblStandardExe.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lblStandardExe.ForeColor = System.Drawing.Color.White;
+      this.lblStandardExe.Location = new System.Drawing.Point(44, 168);
+      this.lblStandardExe.Name = "lblStandardExe";
+      this.lblStandardExe.Size = new System.Drawing.Size(132, 52);
+      this.lblStandardExe.TabIndex = 3;
+      this.lblStandardExe.Text = "Standard\r\nExecutable";
+      this.lblStandardExe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // lblDirectRiftExe
+      // 
+      this.lblDirectRiftExe.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+      this.lblDirectRiftExe.ForeColor = System.Drawing.Color.White;
+      this.lblDirectRiftExe.Location = new System.Drawing.Point(228, 168);
+      this.lblDirectRiftExe.Name = "lblDirectRiftExe";
+      this.lblDirectRiftExe.Size = new System.Drawing.Size(132, 52);
+      this.lblDirectRiftExe.TabIndex = 4;
+      this.lblDirectRiftExe.Text = "Direct to HMD\r\nExecutable";
+      this.lblDirectRiftExe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+      // 
+      // pctRegular
+      // 
+      this.pctRegular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+      this.pctRegular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+      this.pctRegular.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.pctRegular.Image = ((System.Drawing.Image)(resources.GetObject("pctRegular.Image")));
+      this.pctRegular.Location = new System.Drawing.Point(46, 32);
+      this.pctRegular.Name = "pctRegular";
+      this.pctRegular.Size = new System.Drawing.Size(128, 128);
+      this.pctRegular.TabIndex = 1;
+      this.pctRegular.TabStop = false;
+      this.pctRegular.Click += new System.EventHandler(this.OnRegularExeLaunch);
+      // 
+      // pctRift
+      // 
+      this.pctRift.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+      this.pctRift.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+      this.pctRift.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+      this.pctRift.Image = global::AppSwitcher.Properties.Resources.hmd_icon;
+      this.pctRift.Location = new System.Drawing.Point(230, 32);
+      this.pctRift.Name = "pctRift";
+      this.pctRift.Size = new System.Drawing.Size(128, 128);
+      this.pctRift.TabIndex = 0;
+      this.pctRift.TabStop = false;
+      this.pctRift.Click += new System.EventHandler(this.OnDirectRiftExeLaunch);
+      // 
+      // MainForm
+      // 
+      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+      this.ClientSize = new System.Drawing.Size(404, 241);
+      this.Controls.Add(this.lblDirectRiftExe);
+      this.Controls.Add(this.lblStandardExe);
+      this.Controls.Add(this.pctRegular);
+      this.Controls.Add(this.pctRift);
+      this.MaximumSize = new System.Drawing.Size(420, 280);
+      this.MinimumSize = new System.Drawing.Size(420, 280);
+      this.Name = "MainForm";
+      this.ShowIcon = false;
+      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+      this.Text = "[Game Title String]";
+      this.Load += new System.EventHandler(this.OnLoaded);
+      ((System.ComponentModel.ISupportInitialize)(this.pctRegular)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.pctRift)).EndInit();
+      this.ResumeLayout(false);
 
         }
 
@@ -134,10 +112,8 @@
 
         private System.Windows.Forms.PictureBox pctRift;
         private System.Windows.Forms.PictureBox pctRegular;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblStandardExe;
+        private System.Windows.Forms.Label lblDirectRiftExe;
     }
 }
 

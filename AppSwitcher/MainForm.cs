@@ -49,15 +49,5 @@ namespace AppSwitcher
             System.Diagnostics.Process.Start(directToRiftExe);
             this.Close();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
